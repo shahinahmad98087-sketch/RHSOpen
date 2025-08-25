@@ -1,0 +1,40 @@
+<div class="box" onclick="showDetail('salman')">Salman</div>
+    <div class="box" onclick="showDetail('kaku')">Kaku</div>
+  </div>
+
+  <div class="details" id="detailBox">
+    <h2 id="name"></h2>
+    <p id="desc"></p>
+  </div>
+
+  <script>
+    const data = {
+      rakib: {
+        name: "Rakib",
+        desc: "Pora Likha te halka balo, Kintu Fatla fua 😆"
+      },
+      hafiz: {
+        name: "Hafiz",
+        desc: "Pora lilkha balo, Kintu Strong But Chill Mod. Tar shob somoy on."
+      },
+      salman: {
+        name: "Salman",
+        desc: "Kuno totho ney 😅"
+      },
+      kaku: {
+        name: "Kaku",
+        desc: "Kuno totho ney 😅"
+      }
+    };
+
+    function showDetail(key) {
+      const info = data[key];
+      document.getElementById('name').innerText = info.name;
+      document.getElementById('desc').innerText = info.desc;
+      document.getElementById('detailBox').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
+```
